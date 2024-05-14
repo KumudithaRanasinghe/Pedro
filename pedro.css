@@ -1,0 +1,40 @@
+body, html{
+    height: 100%;
+    background: #212121;
+}
+.pedro{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.spinner{
+    width: 400px;
+    height: 400px;
+    background: #f5dad8;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 50%;
+    animation: spin 6s linear infinite;
+
+}
+
+img{
+    display: block;
+    width: 100%;
+    animation: bounce 0.2s linear infinite alternate;
+}
+
+@keyframes spin {
+    to{
+        transform: rotate(-1turn);
+    }
+}
+
+@keyframes bounce {
+    to{
+        translate: 0 15px;
+    }
+}
